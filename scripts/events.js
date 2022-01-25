@@ -1,13 +1,12 @@
-/*jshint esversion: 6 */
 
-// Gets the div with the conteiner id witch the entire evnets
+// Gets the div with the container id witch the entire evnets
 //side is inside of
 // the div gets a class and creates an article inside of it
-let conteiner = document.getElementById("conteiner");
+let container = document.getElementById("container");
 let articleElement = document.createElement("article");
-conteiner.appendChild(articleElement);
+container.appendChild(articleElement);
 
-conteiner.classList.add("conteiner");
+container.classList.add("container");
 //Fetches the json file and its content
 
 fetch("../json/events.json")

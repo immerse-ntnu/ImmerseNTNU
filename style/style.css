@@ -1,0 +1,205 @@
+/* Colours:
+    #0B0C10; Dark blue
+    #1F2833; Gunmetal blue
+
+    #C5C6C7; Light Grey
+    #FFFFFF; White
+
+    #66FCF1; Neon blue
+    #45A29E; Teal
+*/
+
+/* --- Background and Body --- */
+body {
+  /* Background  */
+  background-color: #353637;
+  background-image: url("../img/backgroundImage.png");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  /* Body */
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  top: 0%;
+}
+
+
+
+/* --- Article section format --- */
+* {
+    font-family: "Oswald", "Avenir Next Condensed", "Arial Narrow",
+                 "MS UI Gothic", sans-serif;
+}
+article section {
+  background-color: #0B0C10;
+  position: relative;
+  padding: 0 12px 12px 12px;
+}
+article section::after {
+  /* Creates a displaced lighter-colored box beneath sections */
+
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transform: translate(7px, 7px);
+
+  /* Looks */
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #1F2833;
+  box-shadow: 0px 2px 10px 2px black;
+}
+
+/* Headers */
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 6ch;
+  font-weight: 600;
+  transform: scale(1, 1.3);
+  color: rgb(66, 180, 176);
+  margin-left: 5.5%;
+  margin-top: 60px;
+}
+article h2 {
+  /* Font */
+  font-weight: 550;
+  color: #1F2833;
+
+  /* Box styling */
+  background-color: #C5C6C7;
+  padding: 0px 7px;
+  border: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(34, 34, 34);
+
+  /* Positioning */
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  left: -5px;
+}
+article section h2 + p,
+article section h2 + h3,
+article section h2 + h4 {
+  /* Adds space before specific text tags after using a h2 header */
+  padding-top: 35px;
+}
+article h3 {
+    font-weight: normal;
+    font-size: 3.1ch;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0.1ch .6ch 0.7ch;
+}
+article h4 {
+  font-weight: 350;
+  font-size: 2.3ch;
+  color: #45A29E;
+  margin: 0;
+  padding: 0 .8ch;
+  transform: translate(0, -5px)
+}
+
+/* Contents */
+article section p {
+  font-weight: 250;
+  font-size: 2.2ch;
+  color: white;
+  margin: 0;
+  padding: .2ch .8ch 1.2ch;
+}
+article section img {
+  width: calc(100% + 24px);
+  position: relative;
+  left: -12px;
+}
+article section video {
+  width: 100%;
+}
+article section hr {
+  border: 2px solid #1F2833;
+  width: auto;
+  margin: .8ch;
+}
+
+
+/* --- Footer --- */
+footer {
+	width: 100%;
+	height: 8rem;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.212);
+	backdrop-filter: blur(8px);
+
+	color: rgb(240, 240, 240);
+}
+article:last-of-type {
+	padding-bottom: 8rem;
+}
+
+
+/* --- Topbar --- */
+#topbar{
+	padding: 10px;
+	margin-bottom: 20px;
+}
+#topbar img {
+  height: 70px;
+}
+#topbar a:first-child {
+  font-size: 0px;
+  top: 0;
+}
+#topbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  top: 10px;
+}
+#topbar a:hover{
+    color: rgb(72, 209, 205);
+}
+
+
+/* --- Mobile styling rules --- */
+article section {
+	margin: auto;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+/* Tablet and PC styling rules */
+@media only screen and (min-width: 800px) {
+  article section {
+		width: 70%;
+  }
+  h1 {
+    margin-left: 12%;
+  }
+  #topbar a:not(:first-child) {
+    top: -10px;
+  }
+}
+
+/* Small PC/Tablet window styling rules */
+@media only screen and (min-width: 1200px) {
+  article section {
+		width: 60%;
+	}
+  h1 {
+    margin-left: 18%;
+  }
+  #topbar a {
+    font-size: 22px;
+  }
+}

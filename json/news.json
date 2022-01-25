@@ -1,0 +1,28 @@
+{
+  "elements":[
+    {
+      "headline":"Andre møte fullført",
+      "date":"2021/11/10",
+      "paragraph":"Første møte var en suksess! Vi lærte om C# og Objekt orientert programmering, og litt om Unity.",
+      "img" : "../img/second_meeting.jpg"
+    },
+    {
+      "headline":"headline2",
+      "date":"2021/11/8",
+      "paragraph":"If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, c",
+      "img" : "../img/Test.jpg"
+    },
+    {
+      "headline":"headline2",
+      "date":"2021/11/7",
+      "paragraph":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img" : "../img/Test.jpg"
+    },
+    {
+      "headline":"headline2",
+      "date":"2021/11/2",
+      "paragraph":"nd web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img" : "../img/Test.jpg"
+    }
+  ]
+}

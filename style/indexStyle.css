@@ -1,10 +1,7 @@
-:root {
-	--base-color: rgb(72, 209, 205);
-	--base-color-trans: rgb(72, 209, 205, 0.253);
-}
+
 
 button {
-	background: var(--base-color-trans);
+	background: var(--main-color);
 	color: white;
 	backdrop-filter: blur(2px);
 	border: none;
@@ -13,7 +10,7 @@ button {
 }
 
 button:hover {
-	background: var(--base-color);
+	background: var(--main-color-light);
 }
 
 .video-box {

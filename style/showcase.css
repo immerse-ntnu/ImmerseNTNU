@@ -12,7 +12,7 @@ article section {
 }
 
 a {
-    color: #45A29E;
+    color: var(--main-color-light);
 }
 
 /* Styling for PC and tablets */

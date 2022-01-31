@@ -76,7 +76,6 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	box-shadow: 10px 10px var(--gray-dark);
 }
 #applyNow h4 {

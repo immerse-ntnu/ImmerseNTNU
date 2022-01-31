@@ -52,22 +52,7 @@ article section {
   background-color: var(--gray);
   position: relative;
   padding: 0 12px 12px 12px;
-}
-article section::after {
-  /* Creates a displaced lighter-colored box beneath sections */
-
-  /* Positioning */
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  transform: translate(7px, 7px);
-
-  /* Looks */
-  content: '';
-  height: 100%;
-  width: 100%;
-  background-color: #1f1f1f;
-  /*box-shadow: 0px 2px 10px 2px black;*/
+  box-shadow: 10px 10px var(--gray-dark);
 }
 
 /* Headers */
@@ -89,7 +74,6 @@ article h2 {
   background-color: #C5C6C7;
   padding: 0 7px;
   border: 10px;
-  border-radius: 5px;
   box-shadow: 0 0 5px 1px rgb(34, 34, 34);
 
   /* Positioning */
@@ -137,7 +121,7 @@ article section video {
   width: 100%;
 }
 article section hr {
-  border: 2px solid var(--gray-dark);
+  border: 1px solid var(--gray-dark);
   width: auto;
   margin: .8ch;
 }
@@ -162,29 +146,33 @@ article:last-of-type {
 
 /* --- Topbar --- */
 #topbar{
-	padding: 10px;
-	margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #topbar img {
-  height: 50px;
-}
-#topbar a:first-child {
-  font-size: 0;
-  top: 0;
+  width: 300px;
+  margin: auto;
 }
 #topbar a {
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  position: relative;
   top: 10px;
 }
 #topbar a:hover{
     color: var(--main-color-light);
 }
-
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
 
 /* --- Mobile styling rules --- */
 article section {

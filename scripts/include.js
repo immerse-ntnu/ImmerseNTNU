@@ -8,5 +8,6 @@ let info=
     <a href="index.html">
         <img src="../img/immerse_white_text.png" style="margin-top: 18px;">
     </a>
+    <div id="links"></div>
 </div>`; 
 document.write(info);

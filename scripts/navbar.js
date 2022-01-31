@@ -1,4 +1,4 @@
-let articleMenu = document.getElementById("topbar");
+let articleMenu = document.getElementById("links");
 
 const list = [
   {text: "Showcasing", link: "showcase.html", icon: "SC"},

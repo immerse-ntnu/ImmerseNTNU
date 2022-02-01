@@ -1,32 +1,16 @@
+#videos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 video {
-    width: 85%;
+    width: 45%;
     display: block;
-    margin: auto;
     opacity: 80%;
-    border-radius: 10px; 
-    margin-bottom: 20px;
+    box-shadow: 10px 10px var(--shadow-color);
 }
-
-article section {
-    margin-bottom: 40px;
-}
-
 a {
     color: var(--main-color-light);
-}
-
-/* Styling for PC and tablets */
-@media only screen and (min-width: 800px){
-    video {
-        width: 55%;
-    }
-    #external_link_container {
-        width: 60%;
-        display: flex;
-        gap: 30px;
-        margin: auto;
-    }
-    #external_link_container section {
-        width: 45%;
-    }
 }

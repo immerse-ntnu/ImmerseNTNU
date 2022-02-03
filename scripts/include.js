@@ -1,9 +1,8 @@
 let info=
 `<footer>
-    <p>Contact info:</p>
+    <p><a href="contact.html">Contact info:</a></p>
     <p>Mail: immersentnu@gmail.com</p>
     <p>Phone: +47 94421567</p>
-    <a href="contact.html">Contact</a>
 </footer>
 <div id="topbar">
     <a href="index.html">

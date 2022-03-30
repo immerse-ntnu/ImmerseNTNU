@@ -13,4 +13,5 @@ video {
 }
 a {
     color: var(--main-color-light);
+    text-decoration: none;
 }

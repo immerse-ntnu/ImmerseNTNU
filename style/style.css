@@ -169,20 +169,21 @@ article:last-of-type {
   width: 300px;
   margin: auto;
 }
-#topbar a{
+#topbar a {
   padding: 14px 20px;
   text-decoration: none;
   font-size: 17px;
   top: 10px;
-}
-#this {
-   color: var(--main-color-light);
- }
-#notThis {
   color: white;
 }
 #topbar a:hover{
     color: var(--main-color-light);
+}
+#topbar p {
+  padding: 14px 20px;
+  font-size: 17px;
+  top: 10px;
+  color: var(--main-color-light);
 }
 
 #links {

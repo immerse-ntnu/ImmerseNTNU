@@ -12,20 +12,15 @@ const list = [
 var thisPage = window.location.pathname.split("/").pop();
 
 for(let n=0; n < list.length; n++) {
-  let linkMenu = document.createElement("a");
-  linkMenu.innerHTML = list[n].text;
-  linkMenu.href = list[n].link;
-
-
-
-  if(list[n].link === thisPage) {
-    linkMenu.id = "this";
-    console.log(thisPage);
-    console.log(list[n].link);
+  if(list[n].link !== thisPage) {
+    let linkMenu = document.createElement("a");
+    linkMenu.innerHTML = list[n].text;
+    linkMenu.href = list[n].link;
+    articleMenu.appendChild(linkMenu);
   }
   else {
-    linkMenu.id = "notThis";
+    let linkMenu = document.createElement("p");
+    linkMenu.innerHTML = list[n].text;
+    articleMenu.appendChild(linkMenu);
   }
-
-  articleMenu.appendChild(linkMenu);
 }

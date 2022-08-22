@@ -3,6 +3,7 @@ let info=
     <p>Contact info:</p>
     <p>Mail: immersentnu@gmail.com</p>
     <p>Phone: +47 94421567</p>
+    <a href="https://www.facebook.com/immersentnu">Facebook<a>
 </footer>
 <div id="topbar">
     <a href="index.html">

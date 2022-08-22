@@ -1,16 +1,16 @@
 {
   "elements":[
     {
-      "headline":"Første semester er en suksess!",
-      "date":"2022/01/30",
-      "paragraph":"Første semester var en suksess! Vi fikk gjennomgått alt vi skulle for å få våre første juniorer",
-      "img" : "../img/second_meeting.jpg"
+      "headline":"Kart til Hermannia fullført!",
+      "date":"2022/4/20",
+      "paragraph": "Da har våre fantastisk flinke kunst-avdeling blitt ferdige med første prototypen av kartet til 'Kampen om Hermannia', og det ble vakkert!",
+      "img":"../img/hermannia_brett.png"
     },
     {
-      "headline":"Vi tar nå imot nye medlemmer!",
-      "date":"2022/01/31",
-      "paragraph":"Første semester var en suksess! Vi fikk gjennomgått alt vi skulle for å få våre første juniorer",
-      "img" : "../img/apply.jpg"
+      "headline":"Andre møte fullført",
+      "date":"2021/11/10",
+      "paragraph":"Første møte var en suksess! Vi lærte om C# og Objekt orientert programmering, og litt om Unity.",
+      "img" : "../img/second_meeting.jpg"
     }
   ]
 }

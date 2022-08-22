@@ -1,22 +1,26 @@
-let articleMenu = document.getElementById("topbar");
+let articleMenu = document.getElementById("links");
 
 const list = [
-  {text: "Showcasing", link: "showcase.html"},
-  {text: "Events", link: "events.html"},
-  {text: "News", link: "news.html"},
-  {text: "About", link: "about.html"},
-  {text: "Sponsors", link: "sponsors.html"},
+  {text: "Showcasing", link: "showcase.html", icon: "SC"},
+  {text: "Events", link: "events.html", icon: "E"},
+  {text: "News", link: "news.html", icon: "N"},
+  {text: "About", link: "about.html", icon: "A"},
+  {text: "Sponsors", link: "sponsors.html", icon: "S"},
+  {text: "Contact", link: "contact.html", icon: "C"},
 ];
 
-for(let n = 0; n < list.length; n++) {
-  let linkMenu = document.createElement("a");
-  linkMenu.innerHTML = list[n].text;
-  linkMenu.href = list[n].link;
-  articleMenu.appendChild(linkMenu);
-}
+var thisPage = window.location.pathname.split("/").pop();
 
-let linkMenu = document.createElement("a");
-linkMenu.innerHTML = "Apply Now!";
-linkMenu.href = "apply.html";
-linkMenu.classList.add("highlight");
-articleMenu.appendChild(linkMenu);
+for(let n=0; n < list.length; n++) {
+  if(list[n].link !== thisPage) {
+    let linkMenu = document.createElement("a");
+    linkMenu.innerHTML = list[n].text;
+    linkMenu.href = list[n].link;
+    articleMenu.appendChild(linkMenu);
+  }
+  else {
+    let linkMenu = document.createElement("p");
+    linkMenu.innerHTML = list[n].text;
+    articleMenu.appendChild(linkMenu);
+  }
+}

@@ -11,10 +11,9 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromFormat(date, 'yyyy-MM-dd HH:mm').toFormat('d/M/yyyy HH:mm');
     });
 
-  eleventyConfig.addPassthroughCopy("node_modules");
   eleventyConfig.addNunjucksFilter("latestDate", function(collection) {
     return collection.sort((a, b) => {
-      return Date(b.date) - Date(a.date);  // sort from newest to oldest
+      return DateTime.fromObject(b.date) - DateTime.fromObject(a.date);
     })[0];  // return the first item, which is the latest
   });
   eleventyConfig.addNunjucksFilter("latestDateTime", function(collection) {

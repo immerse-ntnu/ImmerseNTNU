@@ -4,12 +4,12 @@ title: Immerse
 stylesheetPath: "/style/indexStyle.css"
 ---
 
-{% set latestEvent = collections.events | latestDate %}
+{% set latestEvent = collections.events | latestDateTime %}
 {% set latestNews = collections.news | latestDate %}
 
 <article>
     <div id="applyNow">
-        <h2>Want to join a growing community of game developers in Trondheim?</h2>
+        <h3>Want to join a growing community of game developers in Trondheim?</h3>
         <form action="/apply/">
             <button class="button">Apply now!</button>
         </form>

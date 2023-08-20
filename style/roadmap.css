@@ -1,0 +1,115 @@
+/* Specific for about, neccesarry for the roadmap to work */
+article ul section {
+    width: 100%;
+    padding: 0 0 0 0;
+}
+article ul img {
+    width: 100%;
+    left: 0;
+}
+/* Setup for roadmap */
+
+.roadmap{
+    /* margin: 0; */
+    padding: 0;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.roadmap ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.roadmap ul li{
+    margin-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.roadmap ul li:last-child{
+    margin-bottom: 0;
+}
+
+.roadmap-content{
+    margin: 0;
+}
+.roadmap-content p{
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+/* For pc and tablets we will have a different look:
+(this makes the "roadmap" */
+@media only screen and (min-width: 800px){
+    /* Basic changes for pc/tablet */
+
+    .roadmap ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    /* changing pointer on hovering */
+    .roadmap ul:hover{
+        cursor: pointer;
+    }
+    /* The roadmap "Line" */
+    .roadmap::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: gray;
+    }
+
+    /* Make the blocks alternate left and rigt */
+    .roadmap ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+    }
+
+    .roadmap ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+    }
+
+    /* Add the dot next to the box */
+    .roadmap ul li::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .roadmap ul li:nth-child(odd)::after{
+        /* transform: translate((50%, -50%)); */
+        right: -40px;
+        top: 50%;
+    }
+    
+    .roadmap ul li:nth-child(even)::after{
+        /* transform: translate((-50%, -50%)); */
+        left: -40px;
+        top: 50%;
+    }
+
+    /* Make the dot change color */
+    .roadmap ul li:hover::after{
+        background-color: #66FCF1;
+    }
+
+}

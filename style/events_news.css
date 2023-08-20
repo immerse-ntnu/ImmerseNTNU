@@ -1,0 +1,125 @@
+/*
+    CSS styling for news and events
+*/
+
+/*
+    The active tag is activated when a div is clicked on in news.html
+*/
+div.active .newsList-col {
+  margin-bottom: 10%;
+}
+div.active .layer {
+  position: relative;
+  padding-top: 2%;
+  margin-bottom: 5%;
+}
+div.active p {
+  width: 88%;
+  height: 100%;
+  color: white;
+  opacity: 1;
+  overflow-y: scroll;
+}
+div.active a {
+  display: none;
+}
+
+/*
+    Giving the scrollbar styling
+*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+div ::-webkit-scrollbar-thumb {
+  background: #45A29E;
+}
+.layer p::-webkit-scrollbar-thumb:hover {
+  background: #66FCF1;
+}
+
+/*
+    Styling the image and giving it less brightness so text is more viseble
+*/
+.newsList-col img {
+  transition: 00.5s;
+  filter: brightness(0.6);
+}
+
+/* 
+    Styling for the div that contains the text
+*/
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 00.5s;
+  filter: brightness(1);
+  padding-top: 10%;
+}
+.layer p {
+  width: 90%;
+  height: 150px;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+  padding: 0% 5% 5% 5%;
+  filter: brightness(1);
+  overflow: hidden;
+}
+
+/* 
+    The text becomes viseble when hovered over 
+*/
+.layer:hover p {
+  opacity: 1;
+}
+.newsList-col a {
+  display: flex;
+  font-size: 15px;
+  color: #25827e;
+  justify-content: right;
+  padding: 2px;
+}
+
+/* 
+    Styling for small screens and phones
+*/
+@media (max-width: 800px) {
+  .layer p {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    height: 30%;
+    opacity: 1;
+  }
+  .newsList-col {
+    width: 100%;
+    margin: 0px;
+  }
+  .row {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    width: 88%;
+  }
+  .newsList-col a {
+    font-size: 10px;
+  }
+  .newsList-col h2 {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .newsList-col img {
+    border-radius: 0px;
+  }
+}
+
+/* 
+    Styling for the events site as well as styling elements 
+*/

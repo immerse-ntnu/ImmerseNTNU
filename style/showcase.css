@@ -1,0 +1,17 @@
+#videos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+video {
+    width: 45%;
+    display: block;
+    opacity: 80%;
+    box-shadow: 10px 10px var(--shadow-color);
+}
+a {
+    color: var(--main-color-light);
+    text-decoration: none;
+}

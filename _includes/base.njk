@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style/style.css">
+    {% if stylesheetPath %}
+    <link rel="stylesheet" href="{{ stylesheetPath }}">
+    {% endif %}
+</head>
+<body>
+    <div id="topbar">
+        <div id="links">
+            <a href="/index">
+                <img src="/img/immerse_white_text.png">
+            </a>
+            {% set currentPage = title %}
+            {% set menuItems = [
+                {"text": "Events", "link": "/events/"},
+                {"text": "News", "link": "/news/"},
+                {"text": "Showcasing", "link": "/showcase/"},
+                {"text": "About", "link": "/about/"},
+                {"text": "Sponsors", "link": "/sponsors/"},
+                {"text": "Contact", "link": "/contact/"}
+            ] %}
+            {% for item in menuItems %}
+                {% if item.text != currentPage %}
+                    <a href="{{ item.link }}">{{ item.text }}</a>
+                {% else %}
+                    <p>{{ item.text }}</p>
+                {% endif %}
+            {% endfor %}</div>
+    </div>
+    {{ content | safe }}
+    <footer>
+        <p><a href="/contact/">Contact info:</a></p>
+        <p>Mail: immersentnu@gmail.com</p>
+        <p>Phone: +47 94421567</p>
+        <a href="https://www.facebook.com/immersentnu">Facebook<a>
+    </footer>
+</body>
+</html>

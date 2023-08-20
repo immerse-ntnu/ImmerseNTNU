@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Immerse
+stylesheetPath: "/style/indexStyle.css"
+---
+
+{% set latestEvent = collections.events | latestDate %}
+{% set latestNews = collections.news | latestDate %}
+
+<article>
+    <div id="applyNow">
+        <h2>Want to join a growing community of game developers in Trondheim?</h2>
+        <form action="/apply/">
+            <button class="button">Apply now!</button>
+        </form>
+    </div>
+    <div id="eventAndNews">
+        <section class="event">
+            <h2>Upcoming Event</h2>
+            <div id="event-div">
+                <img src="/img/Immerse/{{ latestEvent.data.image }}" alt="{{ latestEvent.data.title }}">
+                <h3>{{ latestEvent.data.title }}</h3>
+                <h4>
+                    {{ latestEvent.data.datetime | fromDateTime }}
+                </h4>
+                <p>{{ latestEvent.data.description }}</p>
+                <a href="/events/" class="link_arrow">
+                    <img src="/img/linkArrow.png" alt="link to events">
+                </a>
+            </div>
+        </section>
+        <section class="event">
+            <h2>Recent News</h2>
+            <div id="news-div">
+                <img src="/img/Immerse/{{ latestNews.data.image }}" alt="{{ latestNews.data.title }}">
+                <h3>{{ latestNews.data.title }}</h3>
+                <h4>{{ latestNews.data.date | fromDate }}</h4>
+                <p>{{ latestNews.data.description }}</p>
+                <a href="/news/" class="link_arrow">
+                    <img src="/img/linkArrow.png" alt="link to news">
+                </a>
+            </div>
+        </section>
+    </div>
+    <h3 style="font-style: italic; font-weight: 300; width: 60%; margin: auto; margin-bottom: 60px;">
+        "We want to prepare you for your professional life as a software developer"
+    </h3>
+    <section>
+        <h2>We don't create games</h2>
+        <h3>We create developers</h3>
+        <p>
+            Immerse’s goal is to create a community where everyone can learn from each other and get together to
+            create something they want to make. We want to become an organization known for its talented members.
+        </p>
+    </section>
+    <section>
+        <h2>How does Immerse work?</h2>
+        <p>In your first semester you will acquire the skills to start making games. You will learn about the
+            Unity game engine, the C# programming language, and how to work as a team using Github. You will also
+            create some smaller games.
+        </p>
+        <hr>
+        <p>
+            Starting your second semester you become a junior developer and will work on a larger game with some
+            supervision. You will also help members in their first semester.
+        </p>
+        <hr>
+        <p>
+            When you no longer need supervision you will become a senior, aka someone who supervises junior developers.
+        </p>
+    </section>
+</article>
+<script src="/scripts/playOnHover.js"></script>

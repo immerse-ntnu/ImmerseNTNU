@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Events
+stylesheetPath: "/style/events_news.css"
+---
+
+<div id="container" class="container">
+  <article>
+    {% for event in collections.events %}
+      <section class="body">
+        <div class="events-col">
+          <img src="/img/Immerse/{{ event.data.image }}" alt="{{ event.data.title }}" class="imgDiv">
+          <h3>{{ event.data.title }}</h3>
+          <h4>{{ event.data.datetime | fromDateTime }}</h4>
+          {{ event.templateContent | safe }}
+        </div>
+      </section>
+    {% endfor %}
+  </article>
+</div>

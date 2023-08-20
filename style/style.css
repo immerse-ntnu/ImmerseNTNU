@@ -25,10 +25,9 @@ Zebbben colours:
   --main-color: #6800FF;
   --main-color-dark: #4900b6;
   --main-color-light: #9B00FF;
-  --gray-light: #444;
-  --gray: #323232;
+  --gray-light: #0F0F0F;
+  --gray: #272727;
   --gray-dark: #1f1f1f;
-  --shadow-color: rgba(0,0, 0, 0.5);
 }
 body {
   /* Background  */
@@ -47,7 +46,7 @@ body {
 
 /* --- Article section format --- */
 * {
-    font-family: "Oswald", "Avenir Next Condensed", "Arial Narrow",
+    font-family: "Arial Narrow",
                  "MS UI Gothic", sans-serif;
 }
 article {
@@ -57,8 +56,7 @@ article {
 article section {
   background-color: var(--gray);
   position: relative;
-  padding: 0 12px 12px 12px;
-  box-shadow: 10px 10px var(--shadow-color);
+  padding: 12px;
 }
 
 /* Headers */
@@ -75,24 +73,6 @@ article h2 {
   /* Font */
   font-weight: normal;
   color: white;
-
-  /* Box styling */
-  background-color: var(--main-color);
-  padding: 0 7px;
-  border: 10px;
-  box-shadow: 3px 3px var(--shadow-color);
-
-  /* Positioning */
-  position: absolute;
-  z-index: 1;
-  top: -25px;
-  left: -5px;
-}
-article section h2 + p,
-article section h2 + h3,
-article section h2 + h4 {
-  /* Adds space before specific text tags after using a h2 header */
-  padding-top: 35px;
 }
 article h3 {
     font-weight: normal;
@@ -103,18 +83,19 @@ article h3 {
 }
 article h4 {
   font-weight: 400;
+  font-style:oblique;
   font-size: 2.3ch;
   color: var(--main-color-light);
   margin: 0;
   padding: 0 .8ch;
-  transform: translate(0, -5px)
 }
 
 /* Contents */
 article section {
   justify-content: center;
   align-items: center;
-  margin: 75px auto;
+  border-radius: 5px;
+  margin-bottom: 50px;
 }
 article section p {
   font-weight: 250;
@@ -166,8 +147,9 @@ article:last-of-type {
   align-items: center;
 }
 #topbar img {
-  width: 300px;
+  width: 150px;
   margin: auto;
+  padding-bottom: 4px;
 }
 #topbar a {
   padding: 14px 20px;

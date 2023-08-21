@@ -1,7 +1,6 @@
 /* Specific for about, neccesarry for the roadmap to work */
 article ul section {
     width: 100%;
-    padding: 0 0 0 0;
 }
 article ul img {
     width: 100%;

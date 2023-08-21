@@ -43,12 +43,6 @@ body {
 }
 
 
-@media (min-width: 800px) {
-  article {
-    width: 60%;
-    margin: auto;
-  }
-}
 
 /* --- Article section format --- */
 * {
@@ -57,10 +51,10 @@ body {
                  color: white;
 }
 article {
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
-article section {
+section {
   background-color: var(--gray);
   padding: 12px;
 }
@@ -129,7 +123,7 @@ article:last-of-type {
   align-items: center;
 }
 .topbar img {
-  width: 150px;
+  width: 120px;
   margin: auto;
   padding-bottom: 4px;
 }
@@ -150,10 +144,38 @@ article:last-of-type {
   color: var(--main-color-light);
 }
 
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: auto;
+/* Default styles for mobile screens */
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%; /* Optional: you might want it to take the full width */
+}
+
+.menu.open {
+    display: flex;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  article {
+    width: 60%;
+    margin: auto;
+  }
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row; /* Menu items in a row, i.e., horizontally */
+        justify-content: center; /* Optional: spreads items evenly */
+        align-items: center;
+    }
 }

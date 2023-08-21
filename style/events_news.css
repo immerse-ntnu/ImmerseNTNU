@@ -5,7 +5,7 @@
 /*
     The active tag is activated when a div is clicked on in news.html
 */
-div.active .newsList-col {
+div.active .events-col {
   margin-bottom: 10%;
 }
 div.active .layer {
@@ -39,18 +39,6 @@ div ::-webkit-scrollbar-thumb {
 .layer p::-webkit-scrollbar-thumb:hover {
   background: #66FCF1;
 }
-
-/*
-    Styling the image and giving it less brightness so text is more viseble
-*/
-.newsList-col img {
-  transition: 00.5s;
-  filter: brightness(0.6);
-}
-
-/* 
-    Styling for the div that contains the text
-*/
 .layer {
   height: 100%;
   width: 100%;
@@ -79,7 +67,7 @@ div ::-webkit-scrollbar-thumb {
 .layer:hover p {
   opacity: 1;
 }
-.newsList-col a {
+.events-col a {
   display: flex;
   font-size: 15px;
   color: #25827e;
@@ -98,7 +86,7 @@ div ::-webkit-scrollbar-thumb {
     height: 30%;
     opacity: 1;
   }
-  .newsList-col {
+  .events-col {
     width: 100%;
     margin: 0px;
   }
@@ -108,15 +96,15 @@ div ::-webkit-scrollbar-thumb {
     margin: 0px;
     width: 88%;
   }
-  .newsList-col a {
+  .events-col a {
     font-size: 10px;
   }
-  .newsList-col h2 {
+  .events-col h2 {
     font-size: 20px;
     padding-top: 20px;
   }
-  .newsList-col img {
-    border-radius: 0px;
+  .events-col img {
+    margin-bottom: 20px;
   }
 }
 

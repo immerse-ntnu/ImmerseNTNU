@@ -69,7 +69,8 @@ article h2 {
 }
 
 article h3 {
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 article h4 {
   font-weight: 400;

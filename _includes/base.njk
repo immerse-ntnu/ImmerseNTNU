@@ -13,25 +13,30 @@
 </head>
 <body>
     <div class="topbar links">
+        <button class="hamburger">&#9776;</button>
+
         <a href="/index">
             <img src="/img/immerse_white_text.png">
         </a>
-        {% set currentPage = title %}
-        {% set menuItems = [
-            {"text": "Events", "link": "/events/"},
-            {"text": "News", "link": "/news/"},
-            {"text": "Showcasing", "link": "/showcase/"},
-            {"text": "About", "link": "/about/"},
-            {"text": "Sponsors", "link": "/sponsors/"},
-            {"text": "Contact", "link": "/contact/"}
-        ] %}
-        {% for item in menuItems %}
-            {% if item.text != currentPage %}
-                <a href="{{ item.link }}">{{ item.text }}</a>
-            {% else %}
-                <p>{{ item.text }}</p>
-            {% endif %}
-        {% endfor %}
+        
+        <div class="menu">
+            {% set currentPage = title %}
+            {% set menuItems = [
+                {"text": "Events", "link": "/events/"},
+                {"text": "News", "link": "/news/"},
+                {"text": "Showcasing", "link": "/showcase/"},
+                {"text": "About", "link": "/about/"},
+                {"text": "Sponsors", "link": "/sponsors/"},
+                {"text": "Contact", "link": "/contact/"}
+            ] %}
+            {% for item in menuItems %}
+                {% if item.text != currentPage %}
+                    <a href="{{ item.link }}">{{ item.text }}</a>
+                {% else %}
+                    <p>{{ item.text }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
     <article>
         {{ content | safe }}
@@ -42,5 +47,6 @@
         <p>Phone: +47 94421567</p>
         <a href="https://www.facebook.com/immersentnu">Facebook<a>
     </footer>
+    <script src="/scripts/base.js" ></script>
 </body>
 </html>

@@ -1,8 +1,12 @@
-#videos {
+.videos {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+img {
+    width: 45%;
 }
 
 video {

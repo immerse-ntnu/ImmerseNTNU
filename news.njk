@@ -4,17 +4,13 @@ title: News
 stylesheetPath: "/style/events_news.css"
 ---
 
-<div id="container" class="container">
-  <article class="row">
-    {% for new in collections.news %}
-      <section class="body">
-        <div class="events-col">
-          <img src="/img/Immerse/{{ new.data.image }}" alt="{{ new.data.title }}" class="imgDiv">
-          <h3>{{ new.data.title }}</h3>
-          <h4>{{ new.data.date | fromDate }}</h4>
-          {{ new.templateContent | safe }}
-        </div>
-      </section>
-    {% endfor %}
-  </article>
-</div>
+{% for new in collections.news %}
+  <section class="body">
+    <div class="events-col">
+      <img src="/img/Immerse/{{ new.data.image }}" alt="{{ new.data.title }}" class="imgDiv">
+      <h3>{{ new.data.title }}</h3>
+      <h4>{{ new.data.date | fromDate }}</h4>
+      {{ new.templateContent | safe }}
+    </div>
+  </section>
+{% endfor %}

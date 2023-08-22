@@ -32,7 +32,6 @@ Zebbben colours:
 body {
   /* Background  */
   background-color: var(--gray-light);
-  /*background-image: url("../img/backgroundImage.png");*/
   background-attachment: fixed;
   background-size: 100% 100%;
   /* Body */

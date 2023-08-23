@@ -153,7 +153,6 @@ article:last-of-type {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: left;
 }
@@ -207,11 +206,14 @@ article:last-of-type {
         display: none;
     }
 
+    .topbar {
+        justify-content: center;
+    }
+  
     .menu {
         display: flex;
         flex-direction: row; /* Menu items in a row, i.e., horizontally */
         align-items: center;
-        justify-content: center;
     }
 
 }

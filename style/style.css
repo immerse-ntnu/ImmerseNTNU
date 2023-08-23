@@ -42,6 +42,40 @@ body {
 }
 
 
+input, textarea {
+    background-color: #323131;
+    border-radius: 5px;
+    border: 1px solid rgb(35, 35, 35);
+    padding: 5px;
+    margin: 5px 0 5px 0;
+  }
+  input {
+    width: 60%;
+    max-width: 200px;
+    height: 30px;
+  }
+
+  textarea {
+    width: 95%;
+    height: 100px;
+    max-width: 415px;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+button:hover {
+	background: var(--main-color-dark);
+}
 
 /* --- Article section format --- */
 * {
@@ -114,32 +148,30 @@ article:last-of-type {
 }
 
 /* --- Topbar --- */
-.topbar{
+.topbar {
   padding: 10px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .topbar img {
   width: 120px;
   margin: auto;
   padding-bottom: 4px;
 }
-.topbar a {
+.topbar a, .topbar p {
   padding: 14px 20px;
   text-decoration: none;
   font-size: 17px;
-  top: 10px;
   color: white;
+  margin: 0;
 }
 .topbar a:hover{
     color: var(--main-color-light);
 }
 .topbar p {
-  padding: 14px 20px;
-  font-size: 17px;
-  top: 10px;
   color: var(--main-color-light);
 }
 
@@ -147,7 +179,6 @@ article:last-of-type {
 .menu {
     display: none;
     flex-direction: column;
-    width: 100%; /* Optional: you might want it to take the full width */
 }
 
 .menu.open {
@@ -174,7 +205,7 @@ article:last-of-type {
     .menu {
         display: flex;
         flex-direction: row; /* Menu items in a row, i.e., horizontally */
-        justify-content: center; /* Optional: spreads items evenly */
         align-items: center;
     }
+
 }

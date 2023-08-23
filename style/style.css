@@ -43,35 +43,35 @@ body {
 
 
 input, textarea {
-    background-color: #323131;
-    border-radius: 5px;
-    border: 1px solid rgb(35, 35, 35);
-    padding: 5px;
-    margin: 5px 0 5px 0;
-  }
-  input {
-    width: 60%;
-    max-width: 200px;
-    height: 30px;
-  }
+  background-color: #323131;
+  border-radius: 5px;
+  border: 1px solid rgb(35, 35, 35);
+  padding: 5px;
+  margin: 5px 0 5px 0;
+}
+input {
+  width: 60%;
+  max-width: 200px;
+  height: 30px;
+}
 
-  textarea {
-    width: 95%;
-    height: 100px;
-    max-width: 415px;
-    padding: 5px;
-  }
-  
-  button {
-    background-color: var(--main-color);
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px 0 5px 0;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
-  }
+textarea {
+  width: 95%;
+  height: 100px;
+  max-width: 415px;
+  padding: 5px;
+}
+
+.button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
 
 button:hover {
 	background: var(--main-color-dark);
@@ -153,8 +153,9 @@ article:last-of-type {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
+
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 .topbar img {
   width: 120px;
@@ -193,6 +194,10 @@ article:last-of-type {
     cursor: pointer;
 }
 
+.hamburger:hover {
+  background: none;
+}
+
 @media (min-width: 800px) {
   article {
     width: 60%;
@@ -206,6 +211,7 @@ article:last-of-type {
         display: flex;
         flex-direction: row; /* Menu items in a row, i.e., horizontally */
         align-items: center;
+        justify-content: center;
     }
 
 }

@@ -36,6 +36,7 @@ eleventyConfig.addPassthroughCopy({ "Immerse/images/": "img/Immerse/" });
 eleventyConfig.addPassthroughCopy("style");
 eleventyConfig.addPassthroughCopy("scripts");
 eleventyConfig.addPassthroughCopy("img");
+eleventyConfig.addPassthroughCopy("CNAME");
 
   return {
     dir: {

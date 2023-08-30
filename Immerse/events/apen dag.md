@@ -9,7 +9,7 @@ Immerese har åpen dag (Geologibygget G21)! Vi kommer til å vise fram hva vi gj
 Meld deg på <a href="https://forms.gle/YiZ6tRvoX3MJQ1WH9">her</a>
 
 Bli med da vel!
-</br>
+<br></br>
 (English version)
 
 Immerse has an open meeting (Geology Building G21)! We will showcase what we do, what you will learn if you join Immerse, and have a Q&A session. Pizza will also be served for everyone who wants to participate! 🍕 

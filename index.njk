@@ -14,6 +14,7 @@ stylesheetPath: "/style/indexStyle.css"
 </div>
 <div id="eventAndNews">
     <section class="event" id="event">
+    <a href="/events/">
         <h2>Upcoming Event</h2>
         <div id="event-div">
             <img src="/img/Immerse/{{ latestEvent.data.image }}" alt="{{ latestEvent.data.title }}">
@@ -23,8 +24,10 @@ stylesheetPath: "/style/indexStyle.css"
             </h4>
             <p>{{ latestEvent.data.description }}</p>
         </div>
+    </a>
     </section>
     <section class="event" id="news">
+    <a href="/news/">
         <h2>Recent News</h2>
         <div id="news-div">
             <img src="/img/Immerse/{{ latestNews.data.image }}" alt="{{ latestNews.data.title }}">
@@ -32,6 +35,7 @@ stylesheetPath: "/style/indexStyle.css"
             <h4>{{ latestNews.data.date | fromDate }}</h4>
             <p>{{ latestNews.data.description }}</p>
         </div>
+    </a>
     </section>
 </div>
 <h3 style="font-style: italic; font-weight: 300; width: 60%; margin: auto; margin-bottom: 60px;">
@@ -61,5 +65,3 @@ stylesheetPath: "/style/indexStyle.css"
         When you no longer need supervision you will become a senior, aka someone who supervises junior developers.
     </p>
 </section>
-
-<script src="/scripts/index.js"></script>

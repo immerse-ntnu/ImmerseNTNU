@@ -22,6 +22,10 @@ form {
 	width: 80%;
 }
 
+.event a {
+	text-decoration: none;
+}
+
 #applyNow {
 	background-color: var(--gray);
 	margin: auto;

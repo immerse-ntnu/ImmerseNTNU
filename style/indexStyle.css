@@ -18,12 +18,13 @@ form {
 	margin-left: auto;
 	margin-right: auto;
 }
-.event p {
-	width: 80%;
-}
 
 .event a {
 	text-decoration: none;
+}
+
+.event p {
+	width: 80%;
 }
 
 #applyNow {
